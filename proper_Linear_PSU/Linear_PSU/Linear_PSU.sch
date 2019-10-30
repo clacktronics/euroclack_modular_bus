@@ -1,0 +1,723 @@
+EESchema Schematic File Version 4
+LIBS:Linear_PSU-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:L7812 U1
+U 1 1 5D2B930E
+P 7400 3650
+F 0 "U1" H 7400 3892 50  0000 C CNN
+F 1 "L7812" H 7400 3801 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7425 3500 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 7400 3600 50  0001 C CNN
+	1    7400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7912 U2
+U 1 1 5D2B9853
+P 7400 5100
+F 0 "U2" H 7400 4951 50  0000 C CNN
+F 1 "L7912" H 7400 4860 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7400 4900 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/86/41/c7/2b/45/f2/CD00000450.pdf/files/CD00000450.pdf/jcr:content/translations/en.CD00000450.pdf" H 7400 5100 50  0001 C CNN
+	1    7400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3950 7400 4400
+Wire Wire Line
+	7100 3650 6950 3650
+Wire Wire Line
+	7100 5100 6950 5100
+Connection ~ 7400 4400
+Wire Wire Line
+	7400 4400 7400 4800
+$Comp
+L Device:D D1
+U 1 1 5D2C7E82
+P 7400 3150
+F 0 "D1" H 7400 3366 50  0000 C CNN
+F 1 "1N4001" H 7400 3275 50  0000 C CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 7400 3150 50  0001 C CNN
+F 3 "~" H 7400 3150 50  0001 C CNN
+	1    7400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5D2C82F8
+P 7400 5650
+F 0 "D2" H 7400 5434 50  0000 C CNN
+F 1 "1N4001" H 7400 5525 50  0000 C CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 7400 5650 50  0001 C CNN
+F 3 "~" H 7400 5650 50  0001 C CNN
+	1    7400 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7250 3150 6950 3150
+Wire Wire Line
+	6950 3150 6950 3650
+Connection ~ 6950 3650
+Wire Wire Line
+	7550 3150 7850 3150
+Wire Wire Line
+	7850 3150 7850 3650
+Wire Wire Line
+	7850 3650 7700 3650
+Wire Wire Line
+	6950 5650 6950 5100
+Wire Wire Line
+	6950 5650 7250 5650
+Connection ~ 6950 5100
+Wire Wire Line
+	7550 5650 7850 5650
+Wire Wire Line
+	7850 5650 7850 5100
+Wire Wire Line
+	7850 5100 7700 5100
+$Comp
+L Device:D D4
+U 1 1 5D2CE7DA
+P 8300 4700
+F 0 "D4" V 8254 4779 50  0000 L CNN
+F 1 "1N4001" V 8345 4779 50  0000 L CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 8300 4700 50  0001 C CNN
+F 3 "~" H 8300 4700 50  0001 C CNN
+	1    8300 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 4400 8300 4550
+$Comp
+L Device:D D3
+U 1 1 5D2CFDF7
+P 8300 4000
+F 0 "D3" V 8254 4079 50  0000 L CNN
+F 1 "1N4001" V 8345 4079 50  0000 L CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 8300 4000 50  0001 C CNN
+F 3 "~" H 8300 4000 50  0001 C CNN
+	1    8300 4000
+	0    1    1    0   
+$EndComp
+Connection ~ 8300 4400
+Wire Wire Line
+	8300 3850 8300 3650
+Wire Wire Line
+	8300 4150 8300 4400
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5DA21C73
+P 3250 4050
+F 0 "J1" H 3168 3725 50  0000 C CNN
+F 1 "Conn_01x03" H 3168 3816 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_3-G-5,08_1x03_P5.08mm_Horizontal" H 3250 4050 50  0001 C CNN
+F 3 "~" H 3250 4050 50  0001 C CNN
+	1    3250 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 3950 3650 3950
+Wire Wire Line
+	4050 4600 3600 4600
+Wire Wire Line
+	3500 4600 3500 4150
+Wire Wire Line
+	3500 4150 3450 4150
+$Comp
+L power:GND #PWR0101
+U 1 1 5DA25B34
+P 5250 4450
+F 0 "#PWR0101" H 5250 4200 50  0001 C CNN
+F 1 "GND" H 5255 4277 50  0000 C CNN
+F 2 "" H 5250 4450 50  0001 C CNN
+F 3 "" H 5250 4450 50  0001 C CNN
+	1    5250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4400 5250 4450
+$Comp
+L power:GND #PWR0102
+U 1 1 5DA26E71
+P 3650 4050
+F 0 "#PWR0102" H 3650 3800 50  0001 C CNN
+F 1 "GND" H 3655 3877 50  0000 C CNN
+F 2 "" H 3650 4050 50  0001 C CNN
+F 3 "" H 3650 4050 50  0001 C CNN
+	1    3650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4050 3650 4050
+Text Notes 2750 4100 0    50   ~ 0
+Centre Tap\n
+Text Notes 2750 4000 0    50   ~ 0
+AC Sec 1\n
+Text Notes 2750 4200 0    50   ~ 0
+AC Sec 2
+Wire Wire Line
+	5550 4400 5250 4400
+Connection ~ 5550 4400
+Wire Wire Line
+	5550 4400 5550 4700
+Wire Wire Line
+	3750 5100 4800 5100
+Connection ~ 5550 5100
+Wire Wire Line
+	5550 5100 5550 5000
+$Comp
+L Device:CP C2
+U 1 1 5D2C1A63
+P 5550 4850
+F 0 "C2" H 5668 4896 50  0000 L CNN
+F 1 "4.7-10mF 50V" H 5668 4805 50  0000 L CNN
+F 2 "Clacktronics:C_TH_Elec_22mm_10mm" H 5588 4700 50  0001 C CNN
+F 3 "~" H 5550 4850 50  0001 C CNN
+	1    5550 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3650 4800 3650
+Connection ~ 5550 3650
+Wire Wire Line
+	5550 3650 5550 3700
+Wire Wire Line
+	5550 4000 5550 4400
+$Comp
+L Device:CP C1
+U 1 1 5D2BAE45
+P 5550 3850
+F 0 "C1" H 5668 3896 50  0000 L CNN
+F 1 "4.7-10mF 50V" H 5668 3805 50  0000 L CNN
+F 2 "Clacktronics:C_TH_Elec_22mm_10mm" H 5588 3700 50  0001 C CNN
+F 3 "~" H 5550 3850 50  0001 C CNN
+	1    5550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5DBDBDB3
+P 7850 4000
+F 0 "C7" H 7965 4046 50  0000 L CNN
+F 1 "100n" H 7965 3955 50  0000 L CNN
+F 2 "Clacktronics:C_TH_Disc_P5.00mm" H 7888 3850 50  0001 C CNN
+F 3 "~" H 7850 4000 50  0001 C CNN
+	1    7850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4400 7850 4400
+$Comp
+L Device:C C8
+U 1 1 5DBDD08C
+P 7850 4700
+F 0 "C8" H 7965 4746 50  0000 L CNN
+F 1 "100n" H 7965 4655 50  0000 L CNN
+F 2 "Clacktronics:C_TH_Disc_P5.00mm" H 7888 4550 50  0001 C CNN
+F 3 "~" H 7850 4700 50  0001 C CNN
+	1    7850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4850 7850 5100
+Connection ~ 7850 5100
+Wire Wire Line
+	7850 4550 7850 4400
+Connection ~ 7850 4400
+Wire Wire Line
+	7850 4400 8300 4400
+Wire Wire Line
+	7850 4400 7850 4150
+Wire Wire Line
+	7850 3850 7850 3650
+Connection ~ 7850 3650
+Wire Wire Line
+	8300 4850 8300 5100
+Wire Wire Line
+	8300 5100 7850 5100
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J2
+U 1 1 5DC102C6
+P 9200 4300
+F 0 "J2" H 9250 3675 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 9250 3766 50  0000 C CNN
+F 2 "Clacktronics:Eurorack-IDC-Header" H 9200 4300 50  0001 C CNN
+F 3 "~" H 9200 4300 50  0001 C CNN
+	1    9200 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 5DC1165D
+P 9950 4300
+F 0 "J3" H 9868 3675 50  0000 C CNN
+F 1 "Conn_01x08" H 9868 3766 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 9950 4300 50  0001 C CNN
+F 3 "~" H 9950 4300 50  0001 C CNN
+	1    9950 4300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9000 4600 8850 4600
+Wire Wire Line
+	8850 4600 8850 5100
+Wire Wire Line
+	8850 5100 8600 5100
+Connection ~ 8300 5100
+Wire Wire Line
+	9000 4400 9000 4500
+Connection ~ 9000 4400
+Wire Wire Line
+	9000 4300 9000 4400
+Wire Wire Line
+	9500 4300 9500 4400
+Wire Wire Line
+	9500 4400 9500 4500
+Connection ~ 9500 4400
+Wire Wire Line
+	9000 4200 8550 4200
+Wire Wire Line
+	8550 4200 8550 3650
+Wire Wire Line
+	8550 3650 8300 3650
+Connection ~ 8300 3650
+Wire Wire Line
+	9500 4200 9750 4200
+Wire Wire Line
+	9750 4400 9500 4400
+Wire Wire Line
+	9750 4600 9500 4600
+NoConn ~ 9750 3900
+NoConn ~ 9750 4000
+NoConn ~ 9000 4000
+NoConn ~ 9000 3900
+NoConn ~ 9500 3900
+NoConn ~ 9500 4000
+$Comp
+L power:+12V #PWR0107
+U 1 1 5DC6BE4D
+P 8550 3600
+F 0 "#PWR0107" H 8550 3450 50  0001 C CNN
+F 1 "+12V" H 8565 3773 50  0000 C CNN
+F 2 "" H 8550 3600 50  0001 C CNN
+F 3 "" H 8550 3600 50  0001 C CNN
+	1    8550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0108
+U 1 1 5DC6C540
+P 8600 5250
+F 0 "#PWR0108" H 8600 5350 50  0001 C CNN
+F 1 "-12V" H 8615 5423 50  0000 C CNN
+F 2 "" H 8600 5250 50  0001 C CNN
+F 3 "" H 8600 5250 50  0001 C CNN
+	1    8600 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8600 5100 8600 5250
+Connection ~ 8600 5100
+Wire Wire Line
+	8550 3600 8550 3650
+Connection ~ 8550 3650
+$Comp
+L power:+12V #PWR0109
+U 1 1 5DC729B1
+P 4750 1750
+F 0 "#PWR0109" H 4750 1600 50  0001 C CNN
+F 1 "+12V" H 4765 1923 50  0000 C CNN
+F 2 "" H 4750 1750 50  0001 C CNN
+F 3 "" H 4750 1750 50  0001 C CNN
+	1    4750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0111
+U 1 1 5DC734D9
+P 5500 2600
+F 0 "#PWR0111" H 5500 2700 50  0001 C CNN
+F 1 "-12V" H 5515 2773 50  0000 C CNN
+F 2 "" H 5500 2600 50  0001 C CNN
+F 3 "" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5DC739B5
+P 4750 2600
+F 0 "#PWR0112" H 4750 2350 50  0001 C CNN
+F 1 "GND" H 4755 2427 50  0000 C CNN
+F 2 "" H 4750 2600 50  0001 C CNN
+F 3 "" H 4750 2600 50  0001 C CNN
+	1    4750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5DC74433
+P 5500 1750
+F 0 "#PWR0114" H 5500 1500 50  0001 C CNN
+F 1 "GND" H 5505 1577 50  0000 C CNN
+F 2 "" H 5500 1750 50  0001 C CNN
+F 3 "" H 5500 1750 50  0001 C CNN
+	1    5500 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 2500 4750 2600
+$Comp
+L Device:R R1
+U 1 1 5DC8184E
+P 4750 2000
+F 0 "R1" H 4820 2046 50  0000 L CNN
+F 1 "4k7" H 4820 1955 50  0000 L CNN
+F 2 "Clacktronics:R_TH_Axial_250mw_P10.16mm_Horizontal" V 4680 2000 50  0001 C CNN
+F 3 "~" H 4750 2000 50  0001 C CNN
+	1    4750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DC82196
+P 5500 2000
+F 0 "R3" H 5570 2046 50  0000 L CNN
+F 1 "4k7" H 5570 1955 50  0000 L CNN
+F 2 "Clacktronics:R_TH_Axial_250mw_P10.16mm_Horizontal" V 5430 2000 50  0001 C CNN
+F 3 "~" H 5500 2000 50  0001 C CNN
+	1    5500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1750 4750 1850
+Wire Wire Line
+	4750 2150 4750 2200
+Wire Wire Line
+	5500 1750 5500 1850
+Wire Wire Line
+	5500 2150 5500 2200
+Wire Wire Line
+	5500 2500 5500 2600
+Wire Wire Line
+	8300 3650 7850 3650
+Wire Wire Line
+	8300 4400 9000 4400
+Wire Wire Line
+	8600 5100 8300 5100
+$Comp
+L power:+12V #PWR0115
+U 1 1 5DCAA66A
+P 3100 1750
+F 0 "#PWR0115" H 3100 1600 50  0001 C CNN
+F 1 "+12V" H 3115 1923 50  0000 C CNN
+F 2 "" H 3100 1750 50  0001 C CNN
+F 3 "" H 3100 1750 50  0001 C CNN
+	1    3100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0117
+U 1 1 5DCAE1E1
+P 3100 2150
+F 0 "#PWR0117" H 3100 2250 50  0001 C CNN
+F 1 "-12V" H 3115 2323 50  0000 C CNN
+F 2 "" H 3100 2150 50  0001 C CNN
+F 3 "" H 3100 2150 50  0001 C CNN
+	1    3100 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5DCAE744
+P 3500 2150
+F 0 "#PWR0118" H 3500 1900 50  0001 C CNN
+F 1 "GND" H 3505 1977 50  0000 C CNN
+F 2 "" H 3500 2150 50  0001 C CNN
+F 3 "" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP-12V1
+U 1 1 5DCB71E1
+P 3100 2150
+F 0 "TP-12V1" H 3253 2251 50  0000 L CNN
+F 1 "TP_-12v" H 3253 2160 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3300 2150 50  0001 C CNN
+F 3 "~" H 3300 2150 50  0001 C CNN
+	1    3100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP_GND1
+U 1 1 5DCB8331
+P 3500 2150
+F 0 "TP_GND1" H 3653 2251 50  0000 L CNN
+F 1 "TP_GND" H 3653 2160 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3700 2150 50  0001 C CNN
+F 3 "~" H 3700 2150 50  0001 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP+12V1
+U 1 1 5DCB859D
+P 3100 1750
+F 0 "TP+12V1" H 3056 1758 50  0000 R CNN
+F 1 "TP_+12v" H 3056 1849 50  0001 R CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3300 1750 50  0001 C CNN
+F 3 "~" H 3300 1750 50  0001 C CNN
+	1    3100 1750
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP_FILT+1
+U 1 1 5DCBFD1C
+P 4800 3650
+F 0 "TP_FILT+1" H 4953 3751 50  0000 L CNN
+F 1 "TP_FILT+" H 4953 3660 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5000 3650 50  0001 C CNN
+F 3 "~" H 5000 3650 50  0001 C CNN
+	1    4800 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 3650
+Wire Wire Line
+	4800 3650 5550 3650
+$Comp
+L Connector:TestPoint_Probe TP_FILT-1
+U 1 1 5DCC0329
+P 4800 5100
+F 0 "TP_FILT-1" H 4953 5201 50  0000 L CNN
+F 1 "TP_FILT-" H 4953 5110 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 5000 5100 50  0001 C CNN
+F 3 "~" H 5000 5100 50  0001 C CNN
+	1    4800 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4800 5100
+Wire Wire Line
+	4800 5100 5550 5100
+$Comp
+L Connector:TestPoint_Probe TP_AC1
+U 1 1 5DCC08BE
+P 3650 3950
+F 0 "TP_AC1" H 3803 4051 50  0000 L CNN
+F 1 "TP_AC1" H 3650 4450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3850 3950 50  0001 C CNN
+F 3 "~" H 3850 3950 50  0001 C CNN
+	1    3650 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 3950
+Wire Wire Line
+	3650 3950 4050 3950
+$Comp
+L Connector:TestPoint_Probe TP_AC2
+U 1 1 5DCC0E79
+P 3600 4600
+F 0 "TP_AC2" H 3500 4500 50  0000 L CNN
+F 1 "TP_AC2" V 3700 5700 50  0000 L CNN
+F 2 "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm" H 3800 4600 50  0001 C CNN
+F 3 "~" H 3800 4600 50  0001 C CNN
+	1    3600 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3600 4600
+Wire Wire Line
+	3600 4600 3500 4600
+$Comp
+L Mechanical:Heatsink HS2
+U 1 1 5DCC30ED
+P 2400 6300
+F 0 "HS2" H 2542 6421 50  0000 L CNN
+F 1 "Heatsink" H 2542 6330 50  0000 L CNN
+F 2 "Heatsink:Heatsink_Fischer_SK104-STC-STIC_35x13mm_2xDrill2.5mm" H 2412 6300 50  0001 C CNN
+F 3 "~" H 2412 6300 50  0001 C CNN
+	1    2400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 5DCC45D2
+P 1750 6300
+F 0 "HS1" H 1892 6421 50  0000 L CNN
+F 1 "Heatsink" H 1892 6330 50  0000 L CNN
+F 2 "Heatsink:Heatsink_Fischer_SK104-STC-STIC_35x13mm_2xDrill2.5mm" H 1762 6300 50  0001 C CNN
+F 3 "~" H 1762 6300 50  0001 C CNN
+	1    1750 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5DCD1072
+P 2700 6650
+F 0 "H3" H 2800 6696 50  0000 L CNN
+F 1 "MountingHole" H 2800 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2700 6650 50  0001 C CNN
+F 3 "~" H 2700 6650 50  0001 C CNN
+	1    2700 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5DCD1524
+P 3350 6650
+F 0 "H4" H 3450 6696 50  0000 L CNN
+F 1 "MountingHole" H 3450 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 3350 6650 50  0001 C CNN
+F 3 "~" H 3350 6650 50  0001 C CNN
+	1    3350 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5DCD1965
+P 2150 6650
+F 0 "H2" H 2250 6696 50  0000 L CNN
+F 1 "MountingHole" H 2250 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2150 6650 50  0001 C CNN
+F 3 "~" H 2150 6650 50  0001 C CNN
+	1    2150 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DCD1DF2
+P 1600 6650
+F 0 "H1" H 1700 6696 50  0000 L CNN
+F 1 "MountingHole" H 1700 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1600 6650 50  0001 C CNN
+F 3 "~" H 1600 6650 50  0001 C CNN
+	1    1600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5DCD56C5
+P 4750 2350
+F 0 "D6" V 4789 2233 50  0000 R CNN
+F 1 "LED" V 4698 2233 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 4750 2350 50  0001 C CNN
+F 3 "~" H 4750 2350 50  0001 C CNN
+	1    4750 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5DCD7133
+P 5500 2350
+F 0 "D8" V 5539 2233 50  0000 R CNN
+F 1 "LED" V 5448 2233 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 5500 2350 50  0001 C CNN
+F 3 "~" H 5500 2350 50  0001 C CNN
+	1    5500 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5DCE6F32
+P 3900 4100
+F 0 "D5" H 3850 4200 50  0000 L CNN
+F 1 "1N4001" V 4050 3350 50  0000 L CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 3900 4100 50  0001 C CNN
+F 3 "~" H 3900 4100 50  0001 C CNN
+	1    3900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D10
+U 1 1 5DCF8580
+P 4200 4100
+F 0 "D10" H 4150 4200 50  0000 L CNN
+F 1 "1N4001" H 4950 3500 50  0000 L CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 4200 4100 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	-1   0    0    1   
+$EndComp
+Connection ~ 4350 4100
+Wire Wire Line
+	4350 4100 4350 3650
+$Comp
+L Device:D D9
+U 1 1 5DCF88CF
+P 3900 4500
+F 0 "D9" H 3850 4400 50  0000 L CNN
+F 1 "1N4001" V 3900 3350 50  0000 L CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 3900 4500 50  0001 C CNN
+F 3 "~" H 3900 4500 50  0001 C CNN
+	1    3900 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 4500 3750 5100
+$Comp
+L Device:D D11
+U 1 1 5DCF8D00
+P 4200 4500
+F 0 "D11" H 4100 4400 50  0000 L CNN
+F 1 "1N4001" V 4450 3400 50  0000 L CNN
+F 2 "Clacktronics:D_TH_DO-41_P10.16mm" H 4200 4500 50  0001 C CNN
+F 3 "~" H 4200 4500 50  0001 C CNN
+	1    4200 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 4600 4050 4500
+Connection ~ 4050 4500
+Wire Wire Line
+	4050 3950 4050 4100
+Connection ~ 4050 4100
+Wire Wire Line
+	3750 4100 3750 4500
+Connection ~ 3750 4500
+Wire Wire Line
+	4350 4100 4350 4500
+Wire Wire Line
+	5550 5100 6950 5100
+Wire Wire Line
+	5550 4400 7400 4400
+Wire Wire Line
+	5550 3650 6950 3650
+Text Label 3900 3950 0    50   ~ 0
+AC1
+Text Label 3800 4600 0    50   ~ 0
+AC2
+Connection ~ 9000 4300
+Connection ~ 9500 4300
+Wire Wire Line
+	9000 4400 9500 4400
+Wire Wire Line
+	9500 4500 9000 4500
+Wire Wire Line
+	9000 4300 9500 4300
+Connection ~ 9500 4500
+Connection ~ 9000 4500
+Wire Wire Line
+	9000 4600 9500 4600
+Connection ~ 9000 4600
+Connection ~ 9500 4600
+Connection ~ 9000 4200
+Wire Wire Line
+	9000 4200 9500 4200
+Connection ~ 9500 4200
+NoConn ~ 9750 4100
+NoConn ~ 9500 4100
+NoConn ~ 9000 4100
+$EndSCHEMATC
